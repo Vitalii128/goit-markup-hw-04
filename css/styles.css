@@ -1,0 +1,357 @@
+:root {
+  --logo-web-color: #4d5ae5;
+  --header-logo-second-color: #2e2f42;
+  --title-color: #2e2f42;
+  --text-color: #434455;
+  --hero-title-color: #fff;
+  --hero-btn-color: #fff;
+  --dark-background: #2e2f42;
+  --team-background: #f4f4fd;
+  --text-lh: 1.5;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.header-logo-web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-web-color);
+}
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-logo-second-color);
+  margin-right: 76px;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: var(--text-lh);
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.address-mail:hover,
+.address-mail:focus {
+  color: #404bbf;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.address-item {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: var(--text-lh);
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+/* -MAIN- */
+
+.hero {
+  background-color: var(--dark-background);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.hero-title {
+  position: absolute;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--hero-title-color);
+}
+.hero-title-box {
+  box-sizing: border-box;
+  max-width: 494px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.hero-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: var(--text-lh);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--hero-btn-color);
+  cursor: pointer;
+  background: var(--logo-web-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  border-color: var(--logo-web-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #404bbf;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.features-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  margin-bottom: 8px;
+}
+.features-list {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+}
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.pics {
+  padding-bottom: 120px;
+}
+.pics-list {
+  display: flex;
+  gap: 24px;
+}
+.pics-title {
+  margin-bottom: 72px;
+}
+img {
+  display: block;
+}
+
+.team {
+  background-color: var(--team-background);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-title {
+  margin-bottom: 72px;
+}
+.team-description {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.team-item {
+  width: calc((100% - 72px) / 4);
+  background-color: var(--hero-title-color);
+}
+.team-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  padding-bottom: 8px;
+}
+.team-item-text {
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--dark-background);
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-logo {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/*-----PORTFOLIO-----*/
+
+.categories-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: var(--text-lh);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--logo-web-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+
+.categories-btn {
+  color: #4d5ae5;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.categories-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
+.categories-btn:hover,
+.categories-btn:focus {
+  color: #fff;
+  background: #404bbf;
+  border-color: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*-----MOD-3-----*/
+
+.categories-list {
+  display: flex;
+  gap: 24px;
+}
+
+.services-list {
+  display: flex;
+  row-gap: 48px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+.services-item {
+  box-sizing: border-box;
+  width: calc((100% - 48px) / 3);
+}
+
+.services-item-title {
+  padding-bottom: 8px;
+}
+.services-description {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
+
+.footer-text-box {
+  box-sizing: border-box;
+  width: 264px;
+  height: 72px;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: var(--text-lh);
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
+}
